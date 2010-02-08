@@ -1,0 +1,13 @@
+SVN_URI="http://svn.musepack.net/${PN}"
+SVN_BRANCH="/"
+SVN_REV=${PV}
+inherit cmake svn
+
+DESCRIPTION="ReplayGain library"
+HOMEPAGE="http://www.musepack.net/"
+
+PATCH_URI="447-cmake.patch"
+
+PKG_NAMES="${PN} ${PN}1 ${PN}-devel"
+libreplaygain1_CONTENTS="usr/bin/cygreplaygain-1.dll"
+libreplaygain_devel_CONTENTS="usr/include/ usr/lib/"
