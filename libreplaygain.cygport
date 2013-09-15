@@ -1,0 +1,19 @@
+inherit cmake
+
+NAME="libreplaygain"
+VERSION=475
+RELEASE=1
+CATEGORY="Libs"
+SUMMARY="ReplayGain library"
+DESCRIPTION="ReplayGain library from the Musepack project"
+HOMEPAGE="http://www.musepack.net/"
+SRC_URI="http://files.musepack.net/source/libreplaygain_r${VERSION}.tar.gz"
+SRC_DIR="libreplaygain_r${VERSION}"
+PATCH_URI="
+	475-cflags.patch
+	475-cmake-install.patch
+"
+
+PKG_NAMES="${NAME}1 ${NAME}-devel"
+libreplaygain1_CONTENTS="usr/bin/cygreplaygain-1.dll"
+libreplaygain_devel_CONTENTS="usr/include/ usr/lib/"

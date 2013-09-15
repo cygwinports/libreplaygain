@@ -1,5 +1,0 @@
-category: Audio
-requires: libreplaygain1
-external-source: libreplaygain
-sdesc: "ReplayGain library (development)"
-ldesc: "ReplayGain library"

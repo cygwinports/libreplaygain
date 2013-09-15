@@ -1,0 +1,11 @@
+--- origsrc/libreplaygain_r475/CMakeLists.txt	2013-09-15 17:57:33.970697200 -0500
++++ src/libreplaygain_r475/CMakeLists.txt	2013-09-15 17:59:36.202688500 -0500
+@@ -5,7 +5,7 @@ project(libreplaygain C)
+ set(CMAKE_VERBOSE_MAKEFILE false)
+ 
+ if(NOT MSVC)
+-set(CMAKE_C_FLAGS "-O3 -fomit-frame-pointer -pipe")
++set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -O3 -fomit-frame-pointer -pipe")
+ endif(NOT MSVC)
+ 
+ add_subdirectory(src)

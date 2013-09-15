@@ -1,5 +1,0 @@
-category: Audio
-requires: libgcc1
-external-source: libreplaygain
-sdesc: "ReplayGain library (runtime)"
-ldesc: "ReplayGain library"
